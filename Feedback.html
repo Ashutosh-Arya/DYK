@@ -1,0 +1,93 @@
+<!html>
+<head>
+<link rel="stylesheet" href="CSS/home.css">
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<script src="home.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class ="nav_menu">
+						  <div class="menu_img" >
+						  <img src ="IMG/DYK_logo.png" class ="DYKlogo">
+						  </div>
+						  <div class="nav_tab1">
+						  <ul class="nav nav-tabs" >
+							<a class="nav-link " href="index.html">Home</a>
+							<a class="nav-link"  href="login.php">Login</a>
+						   <a class="nav-link"  href="Explore.html">Explore</a>
+							 <a class="nav-link"  href="Fun-facts.php">Fun-facts</a>
+							  <a class="nav-link"  href="Contribute.html">Contribute</a>
+							<a class="nav-link" href="About_us.html">About-us</a>
+							<a class="nav-link active" href="Feedback.html">Feedback</a>
+						  </ul>
+						</div>
+						  
+						
+
+	</div>
+	<div class="feedback_home">
+	<form action="connection.php" method="POST">
+	<h2>FEEDBACK</h2>
+							<div> <label  >Name : *</label>
+				  <div class="col-sm-10">
+				   <input type="text"   class="form-control-plaintext" name="name"  placeholder="Your good name please" required>
+					
+				  </div>
+							
+						<div>	<label>Your email : * </label>
+						  <div class="col-sm-10">
+							<input type="email" name="email" pattern="[^ @]*@[^ @]*" class="form-control-plaintext" placeholder="example@some.com" required>
+						 							 
+								  
+					<div class="btn-group">Were your expectations met, unmet, or exceeded? *
+					</div><div style="padding-top:10px;" >
+					  <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Met" style="padding:10px;"> Met
+		  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Unmet" style="padding:10px;"> Unmet
+		  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Exceeded" style="padding:10px;"> Exceeded
+        </label></div>
+					  </div>
+				<div> <label for="exampleTextarea" class="form-label mt-4" >How would you describe your experience  on our website ? *</label>
+      <textarea class="form-control"  name="experience" rows="2" placeholder="suggestions..!" required></textarea></div> 
+				
+				<div>   <label  class="form-label mt-4">On a scale of one (unlikely) to five (very likely), how likely would you be to recommend us to
+				friends or family ? *</label>
+      <select class="form-select" name="scale"   required>
+	  <option  >None</option>
+        <option  value="1" >1</option>
+        <option  value="2">2</option>
+        <option  value="3">3</option>
+        <option  value="4">4</option>
+        <option value="5" >5</option>
+      </select>
+    </div> 
+				
+				<div>   <label for="exampleTextarea" class="form-label mt-4">Which features do you wish we had?</label>
+      <textarea class="form-control"  name="features" rows="2" placeholder="Please give your valuable input" ></textarea>
+				  </div>
+				  
+				  <div>
+				  <label for="exampleTextarea" class="form-label mt-4" >Any personal suggestions</label>
+      <textarea class="form-control"  name="p_suggestions" rows="3" placeholder="suggestions..!"></textarea>
+				  
+				  </div>
+				  <div style="padding-top:10px ;">
+				 <input type="submit"  name="submit" class="btn btn-secondary" >
+				</div>
+				</div>
+		</form>	
+		
+
+	<div class= "Bottom">
+						<div class ="Bottom1">
+						<img src ="IMG/bottom_logo.png"  Class=""  style="padding-top:10px">
+						</div>
+						<div class ="Bottom2">
+						All the information based on internet research ..
+						<h5>" DYK "</h5>
+						</div>
+		</div>
+			
+</body>
+</html>

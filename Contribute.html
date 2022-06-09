@@ -1,0 +1,72 @@
+<!html>
+<head>
+<link rel="stylesheet" href="CSS/home.css">
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<script src="home.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class ="nav_menu">
+						  <div class="menu_img" >
+						  <img src ="IMG/DYK_logo.png" class ="DYKlogo">
+						  </div>
+						  <div class="nav_tab1">
+						  <ul class="nav nav-tabs" >
+							<a class="nav-link " href="index.html">Home</a>
+							<a class="nav-link"  href="login.php">Login</a>
+						   <a class="nav-link"  href="Explore.html">Explore</a>
+							 <a class="nav-link"  href="Fun-facts.php">Fun-facts</a>
+							  <a class="nav-link active"  href="Contribute.html">Contribute</a>
+							<a class="nav-link" href="About_us.html">About-us</a>
+							<a class="nav-link " href="Feedback.html">Feedback</a>
+						  </ul>
+						</div>
+						  
+						
+
+	</div>
+	<div class="feedback_home">
+	<form action="code.php" method="POST">
+	<h2>Do you have some Idea/Facts to share?</h2>
+							<div> <label  >Name : </label>
+				  <div class="col-sm-10">
+				   <input type="text"   class="form-control-plaintext" name="name"  placeholder="Your good name please *" required></textarea>
+					
+				  </div>
+							
+						<div>	<label>Your email : </label>
+						  <div class="col-sm-10">
+							<input type="email" pattern="[^ @]*@[^ @]*" name="email" class="form-control-plaintext"  placeholder="example@some.com *" required>
+						 							 
+					
+				<div>   <label for="exampleTextarea" class="form-label mt-4">In case if you know which category its about..? </label>
+      <textarea class="form-control" id="exampleTextarea" rows="1" name="category" placeholder="Please give category" ></textarea>
+				  </div>				  
+					
+				<div>   <label for="exampleTextarea" class="form-label mt-4">Please write your Idea/Facts.... </label>
+      <textarea class="form-control" id="exampleTextarea" rows="3" name="details" placeholder="Please give your valuable input *" required></textarea>
+				  </div>
+				  
+				  
+				  <div style="padding-top:2em ;">
+				 <input type="submit" value="submit" name="submit"  class="btn btn-secondary" >
+				</div>
+		</div></form>
+		
+<div style="padding-top:10px ;">	<h6>We will check it and release soon .. keep checking fun-facts section.	</h6>
+
+		</div>
+	<div class= "Bottom">
+						<div class ="Bottom1">
+						<img src ="IMG/bottom_logo.png"  Class=""  style="padding-top:10px">
+						</div>
+						<div class ="Bottom2">
+						All the information based on internet research ..
+						<h5>" DYK "</h5>
+						</div>
+		</div>
+	</div></div>		
+</body>
+</html>
+

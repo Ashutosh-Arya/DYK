@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Critique -Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="Signup.css">
+		 
+</head>
+<body>
+
+	<div class="bgimage">
+		<div class="menu">
+			
+			<div class="leftmenu">
+				<h4><img src="IMG/logo3.png" alt=height="100" width="100"> Sign Up</h4>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+				
+					<li > <a href="index.html"style="color:white">		HOME </li></a>
+					<li ><a href="login.php"style="color:white"> Login </li></a>
+					<li> <a href="About_us.html"style="color:white">	About us</li></a>
+					<li ><a href="contact.html"style="color:white">	Contact Us </li></a>
+				</ul>
+			</div>
+				<div class="footer"> Copyright reserved to Critique </div>
+		</div>
+		
+		<div class="box">	
+
+
+     <p>Please fill in this form to create an account.</p>
+	 
+      <hr>
+	  <form action="connect.php" method="post">
+	  <h3><br>
+	  <div>
+	    <label for="First_Name"><b>First Name </b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label for="Last_Name"><b>Last Name</b></label></div>
+      <div>
+		<input type="text" placeholder="Enter First Name" name="First_Name" pattern="[a-zA-Z]+" title="letters only" required> &nbsp;&nbsp;&nbsp;
+	     <input type="text" placeholder="Enter Last Name" name="Last_Name" pattern="[a-zA-Z]+" title="letters only "  required> 
+	  </div>
+	  <div>
+       <label for="email"><b>Email ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label for="mobile_no"><b>Mobile No</b></label>
+	  </div>
+	  <div>
+        <input type="email" placeholder="Enter Email" name="Email" required> &nbsp;&nbsp;&nbsp;
+		<input type="tel" placeholder="Enter 10 digit Mobile No" name="mobile_no" pattern="[0-9]{10}" required>
+		 
+	</div>
+		
+    <DIV>
+        <label for="psw"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label for="psw-repeat"><b>Retype Password</b></label>
+	</div>
+	<div>
+        <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+			title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" placeholder="Repeat Password" name="r_psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+			title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required><br>
+        
+    </DIV>
+	
+	<div>
+	<label for="DOB"><b>Enter Dob </b></label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="department"><b>Select Department </b></label>
+	</div>
+	<div>
+	<input type="date" name="Dob"  min="1975-01-01" max="2005-12-31" title="min="1975-01-01, max="2005-12-31 " required>
+	
+  <select id="Department" name="DEPT" required >
+  <option value="" >Select</option>
+    <option value="BCA">BCA</option>
+    <option value="MCA">MCA</option>
+    <option value="MBA">MBA</option>
+  </select>
+  </div>
+	</h3>
+	<br>
+	  
+      
+      <div class="clearfix">
+        <button type="reset" class="btn1">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+        <button type="submit" class="btn2">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+	
+</html>
