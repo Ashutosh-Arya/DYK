@@ -48,9 +48,9 @@
 																						
 </div>
 </div>
-				<div class="body">
-		<h2>posts by you 
-		
+				
+		<div style="text-align: center; padding:20px;"><h2><strong>Posts by you </strong></div>
+		<div class="fun_body">
 		<?php // outpout from sesssion
 														$_SESSION['email']; ?></h3></center>												
 																								
@@ -75,7 +75,7 @@
 		
 		</h2>
 		</div>		
-		
+		<h6 style="text-align:center;"> <b>If you want to share go to contribute section anytime and share , we will alwas be happy to publish.</h4>
 						
 		
 		

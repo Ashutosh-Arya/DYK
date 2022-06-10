@@ -39,119 +39,44 @@
 																								
 																<?php																		
 																		;					
-																	$sql = "SELECT Category ,Details FROM contribute ORDER BY RAND() LIMIT 12";
+																	$sql = "SELECT Category ,Details FROM contribute ORDER BY RAND() LIMIT 11";
 																	$result = mysqli_query($con,$sql);
 
 																	if ($result->num_rows > 0) {
-																	
+																		
+																	 
 																	  while($row = $result->fetch_assoc()) {
 																		 
-
-																		  
-																								  
-																	echo '<div class=" card  border-secondary mb-3 ff" style="max-width: 22rem;">
+																														
+																				echo '<div class="card mb-3 ff" style="max-width: 22rem; ">
 																		  <div class="card-header">Category : '.$row["Category"].'</div>
-																		  <div class="card-body">'.$row["Details"].'</div></div>																			
-																	  <div class=" card  border-secondary mb-3 ff" style="max-width: 22rem;">
-																		  <div class="card-header">Category : '.$row["Category"].'</div>
-																		  <div class="card-body">'.$row["Details"].'</div></div>';	
+																		  <div class="card-body">'.$row["Details"].'</div></div>';																			
+																				
+																	  }
 																	
-																	 }} else {
+																	 }
+																	  else {
 																	  echo "you have no posts yet";
 																	};
 																	
 																?>
-								<div class=" card border-warning mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">Some quick example text to build on the card title and make up the bulk of the card's content
-										 
-									
-									  </div>
-									</div>
-									
-								
-									<div class=" card  border-secondary mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										Some quick example text to build on the card title and make up the bulk of the card's content
-			
-			
-											</div>
-									  </div>
-									
-									
-									<div class=" card border-success mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										Some quick example text to build on the card title and make up the bulk of the card's content
-									  </div>
-									</div>
-									
-									<div class="card border-dark mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									  </div>
-									</div>
-					
-									
-									<div class="card border-danger mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										Some quick example text to build on the card title and make up the bulk of the card's content
-									  </div>
-									</div>
-						
-									<div class="card border-warning mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									  </div>
-									</div>
-							
-									<div class="card border-info mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									  </div>
-									</div>
-									
-									<div class="card border-dark mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									  </div>
-									</div>
-					
-				
-									<div class="card border-success mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									  </div>
-									</div>
-								
-									<div class="card border-dark mb-3 ff" style="max-width: 22rem;">
-									  <div class="card-header">Header</div>
-									  <div class="card-body">
-										
-										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									  </div>
-									</div>
-									
-
 
 </div>
 
 
-
+<script>
+const collection = document.getElementsByClassName("card");
+collection[0].classList.add("border-info");
+collection[1].classList.add("border-success");
+collection[2].classList.add("border-warning");
+collection[3].classList.add("border-danger");
+collection[5].classList.add("border-warning");
+collection[6].classList.add("border-success");
+collection[7].classList.add("border-info");
+collection[8].classList.add("border-success");
+collection[9].classList.add("border-info");
+collection[10].classList.add("border-danger");
+</script>
 			
 
 	<div class= "Bottom">

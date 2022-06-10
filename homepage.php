@@ -50,18 +50,56 @@
 																	  echo "0 results";
 																	};
 																	
-																?></a>       <a class="nav-link" href="user_post.php"> View Posts</a>                     </a>        
+																?></a>       <a class="nav-link" href="user_post.php"> Your Posts</a>                     </a>        
 																
 	<form action="logout.php" method="post"><a class="nav-link "class="logout" onClick="parent.location='logout.php'">Log Out</a></form>
 														
 																						
 </div>
 </div>
-		<div class="body">
-		<h2>This is body 
 		
-		</h2>
-		</div>				
+		<div style="text-align: center; padding:20px;"><h2><strong>Trending Posts</strong></div>
+		
+		</h2><div class="fun_body">
+				<?php																		
+																		;					
+																	$sql = "SELECT Category ,Details FROM contribute ORDER BY RAND() LIMIT 11";
+																	$result = mysqli_query($con,$sql);
+
+																	if ($result->num_rows > 0) {
+																		
+																	 
+																	  while($row = $result->fetch_assoc()) {
+																		 
+																		 
+																			
+																				echo '<div class="card mb-3 ff" style="max-width: 22rem;">
+																		  <div class="card-header">Category : '.$row["Category"].'</div>
+																		  <div class="card-body">'.$row["Details"].'</div></div>';																			
+																				
+																	  }
+																	
+																	 }
+																	  else {
+																	  echo "you have no posts yet";
+																	};
+																	
+																?>
+		</div>	
+
+<script>
+const collection = document.getElementsByClassName("card");
+collection[0].classList.add("border-info");
+collection[1].classList.add("border-success");
+collection[2].classList.add("border-warning");
+collection[3].classList.add("border-danger");
+collection[5].classList.add("border-warning");
+collection[6].classList.add("border-success");
+collection[7].classList.add("border-info");
+collection[8].classList.add("border-success");
+collection[9].classList.add("border-info");
+collection[10].classList.add("border-danger");
+</script>		
 		
 		<div class= "Bottom">
 						<div class ="Bottom1">
